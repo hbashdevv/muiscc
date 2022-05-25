@@ -16,7 +16,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or "تم اختيار بصمة 😂"
-
+rl = random.randint(1,1000)
 URL = os.environ.get("URL") or "https://t.me/fasngon/{rl}"
 
 
