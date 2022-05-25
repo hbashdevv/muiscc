@@ -16,8 +16,8 @@ PING_PIC = os.environ.get("PING_PIC") or (
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or "تم اختيار بصمة 😂"
-
-URL = os.environ.get("URL") or "https://t.me/fasngon/{rl}"
+$themes = rand(74, 154);
+URL = os.environ.get("URL") or "https://t.me/fasngon/$themes"
 
 
 @jmthon.ar_cmd(pattern="ميمز$")
