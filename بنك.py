@@ -1,4 +1,4 @@
-# ======================================================================================================================================
+ # ======================================================================================================================================
 # ping -> edited ping with pic by  @RR7PP
 # كتابة الملف لسورس جمثون فقط ممنوع نسبه لنفسك
 # تخمط دليل فشلك اخمط وكول اني مطور 😂😂
@@ -12,13 +12,15 @@ from userbot import jmthon
 from . import hmention, reply_id
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/e9ad69423797b46ada193.jpg"
+    "https://telegra.ph/file/5c8ae560c767c4d02c5cc.jpg"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "ﭑטּ ࢦـࢬ تـڪـטּ ؏ـࢪآإقـჂ̤ ﭬـע ﺗﺗـڪࢦـࢬ ؏ـטּ ﺂࢦـࢪﭼـꪆلـﮫ🇮🇶🦅"
+JM_TXT = os.environ.get("PING_TEXT") or "تم اختيار بصمة 😂"
+
+URL = os.environ.get("URL") or "تم اختيار بصمة 😂"
 
 
-@jmthon.ar_cmd(pattern="المطور$")
+@jmthon.ar_cmd(pattern="ميمز$")
 async def _(event):
     reply_to_id = await reply_id(event)
     start = datetime.now()
@@ -29,7 +31,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>𝘑𝘔𝘛𝘏𝘖𝘕 𝘋𝘌𝘝𝘌𝘓𝘖𝘗𝘗𝘌𝘙\n✛━━━━━━━━━━━━━✛\n┃ ✦ - SADK:  @l_IIIIIIl\n┃ ✦ <b>{hmention}</b>\n✛━━━━━━━━━━━━━✛"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code>{URL}<b>{hmention}</b>"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
